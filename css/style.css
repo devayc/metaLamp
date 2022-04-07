@@ -1,0 +1,24 @@
+/* twitter <i class="fa-brands fa-twitter"></i>
+    instagram <i class="fa-brands fa-instagram"></i>
+    facebook <i class="fa-brands fa-facebook-square"></i>*/
+@font-face {
+    font-family: Icons;
+    src: url(./fonts/MaterialIcons-Regular.ttf);
+}
+
+:root{
+   --Ds100: #1f2041;
+    --Ds75: rgba(31, 32, 65, 0.75);
+    --Ds50: rgba(31, 32, 65, 0.5);
+    --Ds25: rgba(31, 32, 65, 0.25);
+    --Ds5: rgba(31, 32, 65, 0.05);
+    --pure: #BC9CFF;
+    --green: #6FCF97;
+
+    
+}
+h1{
+    color: var(--Ds75);
+}
+
+
