@@ -13,6 +13,7 @@ ol[class] {
 
 /* Убираем внешние отступы */
 body,
+a,
 h1,
 h2,
 h3,
@@ -26,6 +27,7 @@ figcaption,
 blockquote,
 dl,
 dd {
+    list-style: none;
     margin: 0;
 }
 
@@ -41,11 +43,14 @@ body {
 ul[class],
 ol[class] {
     list-style: none;
+    
 }
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
+a{
     text-decoration-skip-ink: auto;
+    text-decoration: none;
+    
 }
 
 /* Упрощаем работу с изображениями */

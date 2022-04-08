@@ -3,7 +3,7 @@
     facebook <i class="fa-brands fa-facebook-square"></i>*/
 @font-face {
     font-family: Icons;
-    src: url(./fonts/MaterialIcons-Regular.ttf);
+    src: url(/fonts/MaterialIcons-Regular.ttf);
 }
 
 :root{
@@ -17,8 +17,112 @@
 
     
 }
-h1{
+body{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
     color: var(--Ds75);
+}
+h1{
+    color: var(--Ds100);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+h2{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 23px;
+}
+
+h3{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
+li{
+    font-family: Icons;
+    
+}
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+/* ----header */ 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.logo {}
+
+.menu {}
+
+.menu_list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.menu-item:hover {
+   
 }
 
 
+.menu-link{
+    color: var(--Ds50);;
+}
+.menu-link:hover{
+    color: var(--Ds100);
+    font-weight: 700;
+    transition: 0.1s;
+}
+
+.expand{
+  font-size: 24px;
+  vertical-align: text-top;
+  line-height: 19px;
+}
+
+.button-sing-in {
+    border-radius: 22px;
+    border: 2px solid;
+    border:linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+    padding: 9px 20px;
+
+    max-width: 87px;
+    max-height: 34px;
+    text-align: center;
+    vertical-align: text-top;
+    text-transform: uppercase;
+
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    color: rgba(188, 156, 255, 1);
+}
+
+.button-registration {
+
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
