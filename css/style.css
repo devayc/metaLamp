@@ -260,10 +260,159 @@ footer ul {
 .copy__icon *{
     margin-left:20px;
 }
-.fa-brands {}
+/*---finder----*/
 
-.fa-twitter {}
+.main {}
 
-.fa-instagram {}
+.finder {
+    max-width:380px ;
+    max-height: 374px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.finder__container{
+    margin: 40px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.finder__title {}
 
-.fa-facebook-square {}
+.finder__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.date {
+    display: flex;
+    gap: 20px;
+    
+}
+h3{
+    margin-bottom: 5px;
+}
+.come input {
+    width: 100%;
+    height: 42px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    padding-left: 15px;
+    color: rgba(31, 32, 65, 0.75);
+    ;
+    border-radius: 4px;
+    
+    -webkit-appearance: none;
+    -webkit-inner-spin-button: none;
+}
+
+
+.out input {
+    width: 100%;
+    height: 42px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    padding-left: 15px;
+    color: rgba(31, 32, 65, 0.75);
+    ;
+    border-radius: 4px;
+    
+    -webkit-appearance: none;
+}
+    
+.guests select {
+    width: 100%;
+    height: 42px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    padding-left: 15px;
+    color: rgba(31, 32, 65, 0.75);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    
+    -webkit-appearance: none;
+}
+
+.button {
+    text-transform: uppercase;
+    
+    -webkit-appearance: none;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    padding: 9px 20px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    border: none;
+    color: #FFFFFF;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-bottom: 10px;
+}
+.button:focus{
+    outline: 0;
+    outline-offset: 0;
+}
+.button__text{
+    flex: 1 1 auto;
+}
+.arrow_forward{
+    text-transform: none;
+    font-family: 'Icons';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+      
+}
+
+div.ui-datepicker {
+    
+}
+
+/*-----calendar-------*/
+
+
+.air-datepicker{
+    width: 320px;
+    height: 369px;
+}
+
+.air-datepicker-nav--title, .air-datepicker-nav--title i{
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 23px;
+        text-align: center;
+        color: var(--Ds100)
+}
+.air-datepicker-body--day-name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: var(--pure);
+}
+.air-datepicker-cell.-focus-{
+background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
+border-radius: 20px;
+height: 41px;
+width: 41px;
+}
+.air-datepicker-cell {
+   
+}
+.air-datepicker-cell.-selected-{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    border-radius: 22px;
+    height: 41px;
+    width: 41px;
+}

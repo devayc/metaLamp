@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MetaLamp</title>
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Date</title>
     <link
       rel="stylesheet"
-      href="./fonts/fontawesome-free-5.15.4-web/css/brands.css"
+      href="/css/air-datepicker.css"
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/air-datepicker/2.2.3/css/datepicker.min.css"
     />
   </head>
   <body>
-    <i></i>
-    <h1 class="fa-brands fa-instagram">1</h1>
-    <i class="fa-brands fa-instagram"></i>
-    <script
-      src="https://kit.fontawesome.com/229bc945fb.js"
-      crossorigin="anonymous"
-    ></script>
+    <div class="two">
+      <label for="start">С:</label>
+      <input type="text" id="start" />
+      <label for="end">До:</label>
+      <input type="text" id="end" />
+    </div>
+
+    <script src="/js/jquery-3.3.1.min.js"></script>
+    <script src="/js/air-datepicker.js"></script>
+    <script src="/js/index.mjs"></script>
   </body>
 </html>

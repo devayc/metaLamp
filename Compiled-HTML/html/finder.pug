@@ -1,0 +1,21 @@
+section.finder
+    .finder__container
+        h1.finder__title Найдём номера под ваши пожелания
+        form.finder__form
+            .date
+                .come
+                    h3 прибытие
+                    input(type="text" id = "start" placeholder = " дд.мм.гг.")
+                .out
+                    h3 выезд
+                    input(type="text" id = "end" placeholder = " дд.мм.гг.")
+            .guests 
+                h3 гости
+                select сколько гостей
+                    option(value="1") один
+                    option(value="2") два
+                    option(value="3") три
+            .finder__buttom 
+                button.button 
+                    span.button__text подобрать номер
+                    span.arrow_forward arrow_forward
