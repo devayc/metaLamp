@@ -17,6 +17,7 @@
 
     
 }
+
 body{
     font-family: 'Montserrat';
     font-weight: 400;
@@ -92,6 +93,7 @@ li{
   vertical-align: text-top;
   line-height: 19px;
   font-family: Icons;
+  cursor: pointer;
 }
 
 .button-sing-in {
@@ -292,8 +294,8 @@ footer ul {
     gap: 20px;
     
 }
-h3{
-    margin-bottom: 5px;
+.heading-form{
+    margin-bottom: 3px;
 }
 .come input {
     width: 100%;
@@ -303,7 +305,7 @@ h3{
     color: rgba(31, 32, 65, 0.75);
     ;
     border-radius: 4px;
-    
+    cursor: pointer;
     -webkit-appearance: none;
     -webkit-inner-spin-button: none;
 }
@@ -315,22 +317,14 @@ h3{
     border: 1px solid rgba(31, 32, 65, 0.25);
     padding-left: 15px;
     color: rgba(31, 32, 65, 0.75);
-    ;
+    cursor: pointer;
     border-radius: 4px;
     
     -webkit-appearance: none;
 }
     
 .guests select {
-    width: 100%;
-    height: 42px;
-    border: 1px solid rgba(31, 32, 65, 0.25);
-    padding-left: 15px;
-    color: rgba(31, 32, 65, 0.75);
-    border-radius: 4px;
-    margin-bottom: 10px;
-    
-    -webkit-appearance: none;
+  
 }
 
 .button {
@@ -373,6 +367,98 @@ h3{
 div.ui-datepicker {
     
 }
+.guests {
+    
+}
+
+.dropdown {
+width: 100%;
+height: 42px;
+border: 1px solid rgba(31, 32, 65, 0.25);
+padding-left: 15px;
+color: rgba(31, 32, 65, 0.75);
+border-radius: 4px 4px 0 0;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+-webkit-appearance: none;
+}
+.dropdown-container{
+    
+}
+.dropdown span {
+    font-family: Icons;
+}
+
+.dropdown-expand {
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding: 7px 7px 7px 15px;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.dropdown-element {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    text-transform: uppercase;
+}
+.dropdown-element h3 {
+  
+}
+#count{
+    width: 6px;
+}
+.counter {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.counter #pluse, #minus{
+    border-radius: 50%;
+    border: 1px solid;
+    width: 30px;
+    height: 30px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    color: rgba(31, 32, 65, 0.5);
+    cursor: pointer;
+}
+.counter-zero{
+    opacity: 38%;
+}
+.confirm{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    color: var(--pure);
+    width: 90px;
+    height: 15px;
+    display: flex;
+    align-self: self-end;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+
+
+}
+
 
 /*-----calendar-------*/
 
@@ -400,12 +486,13 @@ div.ui-datepicker {
     align-items: center;
     text-align: center;
     color: var(--pure);
+
+    margin-bottom: 30px;
 }
 .air-datepicker-cell.-focus-{
 background: linear-gradient(180deg, #6FCF97 0%, #66D2EA 100%);
 border-radius: 20px;
-height: 41px;
-width: 41px;
+
 }
 .air-datepicker-cell {
    
@@ -413,6 +500,27 @@ width: 41px;
 .air-datepicker-cell.-selected-{
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
     border-radius: 22px;
-    height: 41px;
-    width: 41px;
+}
+.air-datepicker-nav{
+    margin-top:20px;
+    margin-left: 20px ;
+    margin-right: 20px ;
+    border: none
+}
+.air-datepicker--buttons{
+ border: none;
+  
+}
+.air-datepicker-button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    text-transform: uppercase;
+    color: var(--pure);
+}
+.none {
+    display: none;
 }
