@@ -59,7 +59,8 @@ li{
 }
 /* ----header */ 
 .header {
-    margin: 8px 0px;
+    max-width: 1160px;
+    margin: 8px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -147,12 +148,12 @@ footer ul {
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start
 }
 .footer__title{
     color: var(--Ds100);
     font-weight: 700;
     font-size: 12px;
-    line-height: 15px;
     text-transform: uppercase;
 }
 .footer__info {
@@ -364,13 +365,6 @@ footer ul {
       
 }
 
-div.ui-datepicker {
-    
-}
-.guests {
-    
-}
-
 .dropdown {
 width: 100%;
 height: 42px;
@@ -438,7 +432,7 @@ justify-content: space-between;
 .counter-zero{
     opacity: 38%;
 }
-.confirm{
+.dropdown-button{
     border: none;
     outline: none;
     cursor: pointer;
@@ -458,8 +452,16 @@ justify-content: space-between;
 
 
 }
-
-
+.dropdown-buttons{
+    display: flex;
+    justify-content: right;
+}
+.clear{
+    margin-left: -6px;
+}
+.confirm{
+    justify-self: end;
+}
 /*-----calendar-------*/
 
 
@@ -520,6 +522,114 @@ border-radius: 20px;
 
     text-transform: uppercase;
     color: var(--pure);
+}
+/*--registration---*/
+.regform-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 686px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-image: url(/img/regformbackjpg.jpg);
+}
+
+.registration {
+    margin: 10px auto;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    
+    min-width: 380px;
+    min-height: 646px;
+    padding: 40px 30px 30px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.registration h1{
+    margin-bottom: 20px;
+}
+.registration h2{
+    margin:20px 0 5px 0;
+    color: var(--Ds100);
+}
+.regform-femal{
+    display: flex;
+    
+}
+.regform-femal label:not(:last-child){
+    margin-right: 20px;
+}
+
+
+.input_form {
+        height: 44px;
+        border: 1px solid rgba(17, 17, 21, 0.25);
+        color: rgba(31, 32, 65, 0.75);
+        border-radius: 4px;
+        -webkit-appearance: none;
+        margin-bottom: 10px;
+}
+
+
+.registration__sing-in {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type="radio"]{
+/* remove standard background appearance */
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+/* create custom radiobutton appearance */
+display: inline-block;
+width: 20px;
+padding: 4px;
+height: 20px;
+/* background-color only for content */
+background-clip: content-box;
+border: 2px solid var(--pure);
+border-radius: 50%;
+}
+input[type="radio"]:checked {
+    background-color: var(--pure)
+}
+
+.registration__switch {
+    display: flex;
+    align-items: center;
+    width:40px ;
+    height: 20px;
+    padding: 4px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border: 1px solid var(--pure);
+    opacity: 0.5;
+    
+}
+.registration__switch.active{
+    opacity: 1;
+}
+.switch--slider {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    transition: 0.3s;
+}
+.registration input[type = "checkbox"]{
+ display: none;
+}
+ 
+.registration__toogle{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 .none {
     display: none;
